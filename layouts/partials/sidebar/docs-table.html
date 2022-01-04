@@ -1,0 +1,24 @@
+<ul>
+  {{ range .Site.Menus.docs -}}
+    <li class="horizontal mb-1">
+      <h3 class="h4 text-uppercase">{{ .Name }}</h3>
+      {{ if .HasChildren -}}
+      <ul class="list-unstyled">
+        {{ range .Children -}}
+        <li><a class="docs-link" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end -}}
+      </ul>
+      {{ end -}}
+      {{ end -}}
+    </li>
+  </div>
+</ul>
+
+
+<style>
+  .horizontal {
+    display: inline-block;
+    margin-left: 10%;
+    /* You can also add some margins here to make it look prettier */
+  }
+</style>
