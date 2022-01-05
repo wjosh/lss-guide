@@ -11,7 +11,7 @@ Normal attacks and combat skills have a range limit. According to the troops in 
 
 As shown in the following picture, there are 3 squads for our APC squad as well as the enemy's. No.1 is the Pioneer, No.2 is the Backbone, and No.3 is the Rear Guard.
 
-![Image](596754.png)
+![Image](https://i.ytimg.com/vi/i98_oiLteYw/maxresdefault.jpg)
 
 1. Normal attack will attack the nearest enemy.
 2. The combat skill's target depends on the effective range of the skill.
