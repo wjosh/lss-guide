@@ -30,7 +30,7 @@ collections:
           widget: object
           fields:
             - {label: "Parent", name: parent, widget: string,  default: "prologue" }
-    meta: { path: { widget: string, label: 'Path', index_file: "_index"} }
+    meta: { path: { widget: string, label: 'Path', index_file: slug } }
 
 
 
