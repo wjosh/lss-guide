@@ -12,7 +12,6 @@ collections:
       depth: 100
       summary: '{{title}}'
     slug: "{{slug}}"
-    path: '{{slug}}'
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Lead", name: "lead", widget: "string", required: false }
@@ -29,7 +28,7 @@ collections:
           widget: object
           fields:
             - {label: "Parent", name: parent, widget: string,  default: "prologue" }
-    meta: { path: { widget: string, label: 'Path', index_file: '{{slug}}' } }
+    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
 
 
 
