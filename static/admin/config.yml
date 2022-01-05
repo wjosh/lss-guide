@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  squash_merges: true
   branch: main # Branch to update (optional; defaults to master)
 media_folder: static/images
 public_folder: images
@@ -28,7 +29,7 @@ collections:
           widget: object
           fields:
             - {label: "Parent", name: parent, widget: string,  default: "prologue" }
-    meta: { path: { widget: string, label: 'Path' } }
+    meta: { path: { widget: string, label: 'Path', index _file: "_index"} }
 
 
 
