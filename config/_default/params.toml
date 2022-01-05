@@ -2,8 +2,8 @@
 
 ## Homepage
 title = "LSS Guide"
-titleSeparator = "-"
-titleAddition = "LSS Guide"
+titleSeparator = ""
+titleAddition = ""
 description = "A collection of tips, tricks and everything else about LSS"
 
 ## Documentation
