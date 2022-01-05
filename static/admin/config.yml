@@ -17,15 +17,15 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "toc", name: "toc", widget: "boolean", default: true }
-      - label: "Menu" 
-            name: menu
-            widget: object
-            fields:
-              - label: "Main"
-                name: main
-                widget: list
-                fields:
-                  - {label: "Identifier", name: identifier, widget: string}
-                  - {label: "Name", name: name, widget: string}
-                  - {label: "URL", name: url, widget: string}
-                  - {label: "Order", name: weight, widget: number}
+      - label: "Menu"
+        name: menu
+        widget: object,
+        fields:
+        - label: "Main"
+          name: main
+          widget: list
+          fields:
+            - {label: "Identifier", name: identifier, widget: string}
+            - {label: "Name", name: name, widget: string}
+            - {label: "URL", name: url, widget: string}
+            - {label: "Order", name: weight, widget: number}
