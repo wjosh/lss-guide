@@ -9,7 +9,7 @@ collections:
     folder: "content/en/docs"
     create: true
     slug: "{{name}}-{{slug}}"
-    path: '{{slug}}/index'
+    path: '{{parent}}/{{slug}}'
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Lead", name: "lead", widget: "string", required: false }
