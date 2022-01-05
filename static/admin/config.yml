@@ -19,7 +19,7 @@ collections:
       - { label: "toc", name: "toc", widget: "boolean", default: true }
       - label: "Menu"
         name: menu
-        widget: object,
+        widget: object
         fields:
         - label: "Main"
           name: main
