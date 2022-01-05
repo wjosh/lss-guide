@@ -8,7 +8,12 @@ collections:
   - name: "documentation"
     label: "Documentation"
     folder: "content/en/docs"
+    create: true
+    nested:
+      depth: 100
+      summary: '{{title}}'
     slug: "{{slug}}"
+    path: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Lead", name: "lead", widget: "string", required: false }
@@ -25,7 +30,7 @@ collections:
           widget: object
           fields:
             - {label: "Parent", name: parent, widget: string,  default: "prologue" }
-    path: '{{fields.title}}'
+    meta: { path: { widget: string, label: 'Path', index _file: "_index"} }
 
 
 
