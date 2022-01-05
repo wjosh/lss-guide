@@ -1,3 +1,4 @@
+<!-- {{ if .Site.Params.options.collapsibleSidebar -}} -->
   <ul class="list-unstyled collapsible-sidebar">
   {{ $currentPage := . -}}
   {{ range $index, $element := .Site.Menus.docs -}}
@@ -21,7 +22,7 @@
     </li>
   {{ end -}}
   </ul>
-{{ else -}}
+<!-- {{ else -}}
   {{ $currentPage := . -}}
   {{ range .Site.Menus.docs -}}
     <h3 class="h6 text-uppercase">{{ .Name }}</h3>
@@ -35,3 +36,4 @@
     </ul>
     {{ end -}}
   {{ end -}}
+{{ end -}} -->
