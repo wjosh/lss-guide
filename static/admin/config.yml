@@ -8,14 +8,24 @@ collections:
     label: "Documentation"
     folder: "content/en/docs"
     create: true
-    nested:
-      depth: 100
-      summary: "{{title}}"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{name}}-{{slug}}"
+    path: '{{slug}}/index'
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Lead", name: "lead", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-    meta: { path: { widget: string, label: "Path", index_file: "index" } }
+      - { label: "toc", name: "toc", widget: "boolean", default: true }
+      - label: "Menu" 
+            name: menu
+            widget: object
+            fields:
+              - label: "Main"
+                name: main
+                widget: list
+                fields:
+                  - {label: "Identifier", name: identifier, widget: string}
+                  - {label: "Name", name: name, widget: string}
+                  - {label: "URL", name: url, widget: string}
+                  - {label: "Order", name: weight, widget: number}
