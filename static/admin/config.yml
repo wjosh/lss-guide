@@ -25,7 +25,7 @@ collections:
           widget: object
           fields:
             - {label: "Parent", name: parent, widget: string,  default: "prologue" }
-    path: {{fields.title}}
+    path: '{{fields.title}}'
 
 
 
