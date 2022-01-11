@@ -11,6 +11,3 @@ menu:
 
 1. Process and save a shit ton of composite materials, 10mil at the very least
 2. Re-spec green specialty tree to maximize honor gain from building upgrades. See the picture below:
-
-   ![DD spec tree](604772.jpg "DD spec tree")
-3.
