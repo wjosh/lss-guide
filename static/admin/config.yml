@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   squash_merges: true
   branch: main # Branch to update (optional; defaults to master)
-media_folder: "static"
-public_folder: ""
+media_folder: "static/admin/images"
+public_folder: "images"
 collections:
   - name: "documentation"
     label: "Documentation"
