@@ -8,4 +8,4 @@ menu:
 ---
 tst
 
-![](static/images/minion-brush-bot-lbcb2.png)
+![](images/minion-brush-bot-lbcb2.png)
